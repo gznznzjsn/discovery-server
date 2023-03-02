@@ -1,0 +1,11 @@
+server:
+  port: ${SERVER_PORT}
+
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+
+spring:
+  config:
+    import: optional:.env[.properties]
